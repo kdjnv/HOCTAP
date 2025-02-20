@@ -47,14 +47,12 @@ void loop() {
   int x = ThingSpeak.writeField(2, 1, t, API);
   delay(500);
   int y = ThingSpeak.writeField(2, 2, h, API);
+  delay(500);
   if (x == 200 && y == 200){
     Serial.println("Success");
   }
   else{
     Serial.println("error");
   }
-
-  delay(500);
-  
 }
 
